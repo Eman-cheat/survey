@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hover Animation</title>
+  <link rel="stylesheet" href="survay_form.css" />
+</head>
+
+<body>
+  <h1 id="title">Form Survey</h1>
+  <p id="description">This form we create for survey</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Enter your name:
+        <input type="text" id="name" required placeholder="john cina">
+      </label>
+      <label id="email-label" for="email">Enter you Email:
+        <input type="email" id="email" required placeholder="eman1244@gmail.com">
+      </label>
+      <label id="number-label" for="number">Age(years):
+        <input type="number" id="number" min="16" max="100" required placeholder="22">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">The university you come from:
+      <select id="dropdown">
+        <option>Please choose one</option>
+        <option>Cambodia academy of Digital Technology-CADT </option>
+        <option>ITC</option>
+        <option>UP</option>
+        <option>UHS</option>
+        <option>PARAGON</option>
+      </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What's year are you studying?</legend>
+      <label>
+        <input type="radio" name="school" value="school"> YEAR1
+      </label>
+      <label>
+        <input type="radio" name="school" value="school"> YEAR2
+        </label>
+      <label>
+        <input type="radio" name="school" value="school"> YEAR3
+        </label>
+      <label>
+        <input type="radio" name="school" value="school"> YEAR4
+        </label>
+        </fieldset>
+        <fieldset>
+        <legend>Which of the following are effective strategies to stop water pollution?</legend>
+      <label>
+        <input type="checkbox" value="answer" >Reduce plastic use
+        </label>
+      <label>
+        <input type="checkbox" value="answer">Implement stricter regulations on industrial waste disposal
+        </label>
+      <label>
+        <input type="checkbox" value="answer">Promote the use of biodegradable products
+        </label>
+      <label>
+        <input type="checkbox" value="answer">Invest in water treatment facilities
+        </label>
+      <label>
+        <input type="checkbox" >Increase public awareness through educational campaigns
+        </label>
+      <label for="suggest">Do you have any idea to suggestion:
+        <textarea id="suggest" name="sugegst" rows="3" cols="30"></textarea>
+        </label>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
